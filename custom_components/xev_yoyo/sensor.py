@@ -31,9 +31,9 @@ class XevYoyoBaseSensor(CoordinatorEntity, SensorEntity):
     def device_info(self):
         return {
             "identifiers": {(DOMAIN, self.vehicle_id)},
-            "name": "XEV Yoyo Pro",
+            "name": "XEV Yoyo",
             "manufacturer": "XEV",
-            "model": "Yoyo Pro",
+            "model": "Yoyo",
         }
 
 class XevBatterySensor(XevYoyoBaseSensor):
@@ -118,5 +118,4 @@ class XevDebugSensor(XevYoyoBaseSensor):
 
     @property
     def extra_state_attributes(self):
-        """Mette i dati grezzi qui."""
         return {"raw_data": self.coordinator.data}

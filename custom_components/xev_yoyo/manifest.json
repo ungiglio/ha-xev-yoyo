@@ -1,10 +1,10 @@
 {
   "domain": "xev_yoyo",
-  "name": "XEV Yoyo Pro",
+  "name": "XEV Yoyo",
   "codeowners": ["@ungiglio"],
   "config_flow": true,
-  "documentation": "https://github.com/tuo-username/ha-xev-yoyo",
+  "documentation": "https://github.com/ungiglio/ha-xev-yoyo",
   "iot_class": "cloud_polling",
-  "issue_tracker": "https://github.com/tuo-username/ha-xev-yoyo/issues",
+  "issue_tracker": "https://github.com/ungiglio/ha-xev-yoyo/issues",
   "version": "26.1"
 }

@@ -2,7 +2,7 @@
   "config": {
     "step": {
       "user": {
-        "title": "Configurazione XEV Yoyo Pro",
+        "title": "Configurazione XEV Yoyo",
         "description": "Inserisci i dati ottenuti dal reverse engineering dell'app.",
         "data": {
           "uuid": "UUID del dispositivo",
@@ -18,5 +18,5 @@
       "unknown": "Errore imprevisto"
     }
   },
-  "title": "XEV Yoyo Pro"
+  "title": "XEV Yoyo"
 }

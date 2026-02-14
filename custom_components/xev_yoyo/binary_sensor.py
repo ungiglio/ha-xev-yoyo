@@ -22,9 +22,9 @@ class XevYoyoBinaryBase(CoordinatorEntity, BinarySensorEntity):
     def device_info(self):
         return {
             "identifiers": {(DOMAIN, self.vehicle_id)},
-            "name": "XEV Yoyo Pro",
+            "name": "XEV Yoyo",
             "manufacturer": "XEV",
-            "model": "Yoyo Pro",
+            "model": "Yoyo",
         }
 
 class XevLockSensor(XevYoyoBinaryBase):
