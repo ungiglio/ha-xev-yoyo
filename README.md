@@ -1,6 +1,6 @@
-# XEV Yoyo Pro - Home Assistant Integration
+# XEV Yoyo - Home Assistant Integration
 
-Integrazione non ufficiale per monitorare la tua **XEV Yoyo Pro** direttamente su Home Assistant. Grazie al reverse engineering dell'API ufficiale, questa integrazione permette di visualizzare i dati del veicolo senza passare dall'app mobile.
+Integrazione non ufficiale per monitorare la tua **XEV Yoyo** direttamente su Home Assistant. Grazie al reverse engineering dell'API ufficiale, questa integrazione permette di visualizzare i dati del veicolo senza passare dall'app mobile.
 
 ## 📊 Sensori inclusi
 - 🔋 **Livello Batteria**: Stato della carica in percentuale.
