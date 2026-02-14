@@ -1,5 +1,6 @@
 {
-  "name": "XEV Yoyo Pro",
-  "content_type": "integration",
-  "render_readme": true
+  "name": "XEV Yoyo",
+  "render_readme": true,
+  "category": "integration",
+  "homeassistant": "2026.2.2"
 }
