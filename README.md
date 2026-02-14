@@ -1,3 +1,5 @@
+![v26.1-beta1](https://img.shields.io/badge/release-v26.1--beta1-blue) ![License MIT](https://img.shields.io/badge/license-MIT-lightgrey)
+
 # XEV Yoyo - Home Assistant Integration
 
 Unofficial Home Assistant integration for the **XEV Yoyo**, developed through reverse engineering of the official API.
