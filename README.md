@@ -1,10 +1,6 @@
 # XEV Yoyo - Home Assistant Integration
 
-<<<<<<< Updated upstream
-Integrazione non ufficiale per monitorare la tua **XEV Yoyo** direttamente su Home Assistant. Grazie al reverse engineering dell'API ufficiale, questa integrazione permette di visualizzare i dati del veicolo senza passare dall'app mobile.
-=======
-Unofficial Home Assistant integration for the **XEV Yoyo Pro**, developed through reverse engineering of the official API.
->>>>>>> Stashed changes
+Unofficial Home Assistant integration for the **XEV Yoyo**, developed through reverse engineering of the official API.
 
 ## 📊 Features
 * 🔋 **Battery Level**: SoC in percentage.
@@ -22,16 +18,12 @@ Unofficial Home Assistant integration for the **XEV Yoyo Pro**, developed throug
 1. Open **HACS** > **Custom repositories**.
 2. Add this GitHub URL as an **Integration**.
 3. Install and **Restart** Home Assistant.
-4. Go to **Settings > Devices & Services** and add "XEV Yoyo Pro".
+4. Go to **Settings > Devices & Services** and add "XEV Yoyo".
 
 ---
 
-# XEV Yoyo Pro - Integrazione Home Assistant (Italiano)
+# XEV Yoyo - Integrazione Home Assistant (Italiano)
 
-<<<<<<< Updated upstream
-## ⚠️ Disclaimer
-Questa integrazione non è affiliata né supportata da XEV. L'uso è a proprio rischio. Poiché utilizza API private, potrebbe smettere di funzionare in caso di aggiornamenti da parte del produttore.
-=======
 Integrazione non ufficiale creata tramite reverse engineering delle API XEV.
 
 ## 📊 Funzionalità
@@ -45,4 +37,3 @@ Integrazione non ufficiale creata tramite reverse engineering delle API XEV.
 ## ⚠️ Limitazioni Note
 * **Finestrini**: L'API fornisce solo un valore globale (20 per tutti chiusi, 100 per qualunque apertura). Non è possibile distinguere il lato o la percentuale.
 * **AC e Servizi**: I dati relativi ad Aria Condizionata, Ventole e Blocchi Elettronici sono statici nell'API cloud e non riflettono lo stato reale istantaneo.
->>>>>>> Stashed changes
