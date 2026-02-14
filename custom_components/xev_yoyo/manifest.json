@@ -1,0 +1,10 @@
+{
+  "domain": "xev_yoyo",
+  "name": "XEV Yoyo Pro",
+  "codeowners": ["@ungiglio"],
+  "config_flow": true,
+  "documentation": "https://github.com/tuo-username/ha-xev-yoyo",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/tuo-username/ha-xev-yoyo/issues",
+  "version": "1.0.0"
+}

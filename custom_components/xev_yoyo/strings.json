@@ -1,0 +1,22 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configurazione XEV Yoyo Pro",
+        "description": "Inserisci i dati ottenuti dal reverse engineering dell'app.",
+        "data": {
+          "uuid": "UUID del dispositivo",
+          "app_key": "App Key",
+          "token": "Bearer Token (senza 'Bearer')",
+          "vehicle_id": "ID del Veicolo (Vehicle ID)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossibile connettersi ai server XEV",
+      "invalid_auth": "Token o UUID non validi",
+      "unknown": "Errore imprevisto"
+    }
+  },
+  "title": "XEV Yoyo Pro"
+}
