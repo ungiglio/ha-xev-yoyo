@@ -1,8 +1,8 @@
 import logging
 from datetime import timedelta
-import aiohttp
 import async_timeout
 
+from homeassistant.helpers.aiohttp_client import async_get_clientsession
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, UpdateFailed
 from .const import DOMAIN, API_URL
 
@@ -20,7 +20,6 @@ class XevYoyoCoordinator(DataUpdateCoordinator):
         )
 
     async def _async_update_data(self):
-        """Recupero dati da API"""
         headers = {
             "User-Agent": "YOYO/2.1.3 (iPhone; iOS 26.1; Scale/3.00)",
             "Accept": "application/json",
@@ -37,16 +36,17 @@ class XevYoyoCoordinator(DataUpdateCoordinator):
 
         try:
             async with async_timeout.timeout(10):
-                session = self.hass.helpers.aiohttp_client.async_get_clientsession()
+                session = async_get_clientsession(self.hass)
                 response = await session.post(API_URL, json=payload, headers=headers)
                 
                 if response.status != 200:
-                    raise UpdateFailed(f"Errore API: {response.status}")
+                    raise UpdateFailed(f"Errore API XEV: {response.status}")
                 
                 res_json = await response.json()
                 
-                if res_json.get("code") != "200":
-                    _LOGGER.error("Errore nei dati XEV: %s", res_json.get("message"))
+                if not res_json.get("data"):
+                    _LOGGER.warning("Risposta API senza dati: %s", res_json)
+                    raise UpdateFailed("Dati non ricevuti dall'auto")
                 
                 return res_json.get("data")
 

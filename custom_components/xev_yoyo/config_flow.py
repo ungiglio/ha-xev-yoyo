@@ -5,6 +5,8 @@ from .const import DOMAIN
 class XevYoyoFlowHandler(config_entries.ConfigFlow, domain=DOMAIN):
     async def async_step_user(self, user_input=None):
         if user_input is not None:
+            user_input["token"] = user_input["token"].replace("Bearer ", "").strip()
+            
             return self.async_create_entry(title="XEV Yoyo", data=user_input)
 
         return self.async_show_form(

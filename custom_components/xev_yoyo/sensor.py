@@ -1,3 +1,4 @@
+import logging
 from homeassistant.components.sensor import (
     SensorDeviceClass,
     SensorEntity,
@@ -5,6 +6,8 @@ from homeassistant.components.sensor import (
 )
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 from .const import DOMAIN
+
+_LOGGER = logging.getLogger(__name__)
 
 async def async_setup_entry(hass, entry, async_add_entities):
     coordinator = hass.data[DOMAIN][entry.entry_id]
@@ -14,12 +17,12 @@ async def async_setup_entry(hass, entry, async_add_entities):
         XevRangeSensor(coordinator),
         XevOdometerSensor(coordinator),
         XevStatusSensor(coordinator),
+        XevDebugSensor(coordinator),
     ]
 
     async_add_entities(sensors)
 
 class XevYoyoBaseSensor(CoordinatorEntity, SensorEntity):
-    
     def __init__(self, coordinator):
         super().__init__(coordinator)
         self.vehicle_id = coordinator.entry_data["vehicle_id"]
@@ -34,8 +37,6 @@ class XevYoyoBaseSensor(CoordinatorEntity, SensorEntity):
         }
 
 class XevBatterySensor(XevYoyoBaseSensor):
-    """Sensore della Batteria."""
-    
     _attr_name = "XEV Yoyo Batteria"
     _attr_native_unit_of_measurement = "%"
     _attr_device_class = SensorDeviceClass.BATTERY
@@ -53,12 +54,9 @@ class XevBatterySensor(XevYoyoBaseSensor):
         return None
 
 class XevRangeSensor(XevYoyoBaseSensor):
-    """Sensore Autonomia Residua."""
-    
     _attr_name = "XEV Yoyo Autonomia"
     _attr_native_unit_of_measurement = "km"
     _attr_device_class = SensorDeviceClass.DISTANCE
-    _attr_state_class = SensorStateClass.MEASUREMENT
     _attr_icon = "mdi:map-marker-distance"
 
     @property
@@ -73,13 +71,10 @@ class XevRangeSensor(XevYoyoBaseSensor):
         return None
 
 class XevOdometerSensor(XevYoyoBaseSensor):
-    """Sensore Chilometraggio Totale."""
-    
     _attr_name = "XEV Yoyo Contachilometri"
     _attr_native_unit_of_measurement = "km"
     _attr_device_class = SensorDeviceClass.DISTANCE
     _attr_state_class = SensorStateClass.TOTAL_INCREASING
-    _attr_icon = "mdi:counter"
 
     @property
     def unique_id(self):
@@ -93,8 +88,6 @@ class XevOdometerSensor(XevYoyoBaseSensor):
         return None
 
 class XevStatusSensor(XevYoyoBaseSensor):
-    """Sensore Stato Veicolo (In Carica/Standby)."""
-    
     _attr_name = "XEV Yoyo Stato"
 
     @property
@@ -106,15 +99,24 @@ class XevStatusSensor(XevYoyoBaseSensor):
         data = self.coordinator.data
         if data and "charging_info" in data:
             status = data["charging_info"].get("charging_status")
-            if status == 1:
-                return "In Carica"
-            elif status == 2:
-                return "Disconnessa"
+            if status == 1: return "In Carica"
+            if status == 2: return "Disconnessa"
             return "Standby"
-        return "Sconosciuto"
+        return "Unknown"
+
+class XevDebugSensor(XevYoyoBaseSensor):
+    _attr_name = "XEV Yoyo API Debug"
+    _attr_icon = "mdi:code-json"
 
     @property
-    def icon(self):
-        if self.native_value == "In Carica":
-            return "mdi:battery-charging"
-        return "mdi:car-electric"
+    def unique_id(self):
+        return f"{self.vehicle_id}_debug"
+
+    @property
+    def native_value(self):
+        return "Online" if self.coordinator.data else "Offline"
+
+    @property
+    def extra_state_attributes(self):
+        """Mette i dati grezzi qui."""
+        return {"raw_data": self.coordinator.data}
