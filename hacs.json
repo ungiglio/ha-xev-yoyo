@@ -2,5 +2,6 @@
   "name": "XEV Yoyo",
   "render_readme": true,
   "category": "integration",
-  "homeassistant": "2026.2.2"
+  "homeassistant": "2026.2.2",
+  "requirements": ["aiohttp", "async_timeout"]
 }

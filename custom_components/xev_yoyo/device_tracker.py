@@ -7,11 +7,13 @@ async def async_setup_entry(hass, entry, async_add_entities):
     async_add_entities([XevYoyoTracker(coordinator)])
 
 class XevYoyoTracker(CoordinatorEntity, TrackerEntity):
+    
+    _attr_has_entity_name = True
+    _attr_translation_key = "location"
 
     def __init__(self, coordinator):
         super().__init__(coordinator)
         self.vehicle_id = coordinator.entry_data["vehicle_id"]
-        self._attr_name = "XEV Yoyo Posizione"
         self._attr_unique_id = f"{self.vehicle_id}_location"
 
     @property

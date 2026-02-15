@@ -1,0 +1,56 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "mobile": "Numero di cellulare",
+                    "password": "Password",
+                    "region_code": "Codice Regione (es. 39)"
+                }
+            }
+        },
+        "error": {
+            "invalid_auth": "Credenziali non valide",
+            "no_vehicles": "Nessun veicolo trovato nell'account",
+            "cannot_connect": "Errore di connessione"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "battery": {
+                "name": "Batteria"
+            },
+            "range": {
+                "name": "Autonomia"
+            },
+            "odometer": {
+                "name": "Contachilometri"
+            },
+            "debug": {
+                "name": "Debug API"
+            },
+            "status": {
+                "name": "Stato",
+                "state": {
+                    "charging": "In Carica",
+                    "disconnected": "Disconnessa",
+                    "standby": "Standby",
+                    "unknown": "Sconosciuto"
+                }
+            }
+        },
+        "binary_sensor": {
+            "lock": {
+                "name": "Serratura"
+            },
+            "windows": {
+                "name": "Finestrini"
+            }
+        },
+        "device_tracker": {
+            "location": {
+                "name": "Posizione"
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "mobile": "Mobile Number",
+                    "password": "Password",
+                    "region_code": "Region Code"
+                }
+            }
+        },
+        "error": {
+            "invalid_auth": "Invalid credentials",
+            "no_vehicles": "No vehicles found",
+            "cannot_connect": "Connection error"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "battery": {
+                "name": "Battery"
+            },
+            "range": {
+                "name": "Range"
+            },
+            "odometer": {
+                "name": "Odometer"
+            },
+            "debug": {
+                "name": "API Debug"
+            },
+            "status": {
+                "name": "Status",
+                "state": {
+                    "charging": "Charging",
+                    "disconnected": "Disconnected",
+                    "standby": "Standby",
+                    "unknown": "Unknown"
+                }
+            }
+        },
+        "binary_sensor": {
+            "lock": {
+                "name": "Lock"
+            },
+            "windows": {
+                "name": "Windows"
+            }
+        },
+        "device_tracker": {
+            "location": {
+                "name": "Location"
+            }
+        }
+    }
+}

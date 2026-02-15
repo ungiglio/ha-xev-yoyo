@@ -14,6 +14,8 @@ async def async_setup_entry(hass, entry, async_add_entities):
     ])
 
 class XevYoyoBinaryBase(CoordinatorEntity, BinarySensorEntity):
+    _attr_has_entity_name = True
+
     def __init__(self, coordinator):
         super().__init__(coordinator)
         self.vehicle_id = coordinator.entry_data["vehicle_id"]
@@ -28,7 +30,7 @@ class XevYoyoBinaryBase(CoordinatorEntity, BinarySensorEntity):
         }
 
 class XevLockSensor(XevYoyoBinaryBase):
-    _attr_name = "XEV Yoyo Serratura"
+    _attr_translation_key = "lock"
     _attr_device_class = BinarySensorDeviceClass.LOCK
 
     @property
@@ -43,7 +45,7 @@ class XevLockSensor(XevYoyoBinaryBase):
         return None
 
 class XevWindowBinarySensor(XevYoyoBinaryBase):
-    _attr_name = "XEV Yoyo Stato Finestrini"
+    _attr_translation_key = "windows"
     _attr_device_class = BinarySensorDeviceClass.WINDOW
 
     @property

@@ -6,5 +6,6 @@
   "documentation": "https://github.com/ungiglio/ha-xev-yoyo",
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/ungiglio/ha-xev-yoyo/issues",
-  "version": "26.1"
+  "version": "26.2",
+  "requirements": ["aiohttp", "async_timeout"]
 }
