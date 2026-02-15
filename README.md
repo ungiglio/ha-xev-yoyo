@@ -51,3 +51,7 @@ Integrazione non ufficiale per il veicolo elettrico **XEV Yoyo**, sviluppata tra
 ## Installazione
 
 L'installazione consigliata avviene tramite **HACS** aggiungendo l'URL di questo repository come "Custom Repository" (Repository personalizzato). Dopo l'installazione e il riavvio di Home Assistant, la configurazione può essere completata inserendo le proprie credenziali (numero di cellulare e password) nella sezione **Integrazioni**.
+
+---
+
+This integration is not affiliated with or endorsed by XEV. All logos and trademarks are the property of their respective owners.
