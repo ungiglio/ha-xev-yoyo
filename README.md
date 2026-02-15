@@ -1,3 +1,5 @@
+[![v26.2](https://img.shields.io/badge/release-v26.2-blue)](https://github.com/ungiglio/ha-xev-yoyo/releases/tag/v26.2) [![License MIT](https://img.shields.io/badge/license-MIT-lightgrey)](https://github.com/ungiglio/ha-xev-yoyo?tab=MIT-1-ov-file)
+
 # XEV Yoyo - Home Assistant Integration
 
 Unofficial Home Assistant integration for the **XEV Yoyo** electric vehicle. This component has been developed by reverse engineering the official mobile application APIs to allow local monitoring of vehicle data.
