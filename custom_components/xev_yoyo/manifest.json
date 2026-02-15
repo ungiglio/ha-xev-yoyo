@@ -1,5 +1,5 @@
 {
-  "domain": "ha-xev-yoyo",
+  "domain": "xev_yoyo",
   "name": "XEV Yoyo",
   "codeowners": ["@ungiglio"],
   "config_flow": true,
