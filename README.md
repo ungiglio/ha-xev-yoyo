@@ -21,11 +21,12 @@ Unofficial Home Assistant integration for the **XEV Yoyo** electric vehicle. Thi
 
 ## Installation via HACS
 
-1. Ensure **HACS** is installed and working.
-2. Navigate to **HACS** > **Integrations** > **Custom repositories** (three dots in the top right).
-3. Add the GitHub URL of this repository and select **Integration** as the category.
-4. Click **Install** and **Restart** Home Assistant.
-5. Go to **Settings** > **Devices & Services** > **Add Integration** and search for "XEV Yoyo".
+1. Ensure HACS is installed and working correctly.
+2. Navigate to HACS > Integrations.
+4. Search for "XEV Yoyo" and select it from the list.
+5. Click Download and, once finished, restart Home Assistant.
+6. Go to Settings > Devices & Services > Add Integration.
+7. Search for "XEV Yoyo" and follow the setup instructions.
 
 ---
 
@@ -50,7 +51,12 @@ Integrazione non ufficiale per il veicolo elettrico **XEV Yoyo**, sviluppata tra
 
 ## Installazione
 
-L'installazione consigliata avviene tramite **HACS** aggiungendo l'URL di questo repository come "Custom Repository" (Repository personalizzato). Dopo l'installazione e il riavvio di Home Assistant, la configurazione può essere completata inserendo le proprie credenziali (numero di cellulare e password) nella sezione **Integrazioni**.
+1. Assicurati che HACS sia installato e funzionante.
+2. Naviga in HACS > Integrazioni.
+4. Cerca "XEV Yoyo" e selezionalo dai risultati.
+5. Clicca su Scarica e, una volta terminato, riavvia Home Assistant.
+6. Vai in Impostazioni > Dispositivi e Servizi > Aggiungi integrazione.
+7. Cerca "XEV Yoyo" e segui la procedura di configurazione.
 
 ---
 
