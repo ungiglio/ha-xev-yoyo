@@ -1,0 +1,10 @@
+version: 2
+updates:
+  - package-ecosystem: "pip" # Per le dipendenze in manifest.json e requirements
+    directory: "/"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "github-actions" # Per aggiornare le versioni delle azioni (es. checkout@v4)
+    directory: "/"
+    schedule:
+      interval: "monthly"
