@@ -6,6 +6,7 @@ We currently provide security updates for the following versions of this integra
 
 | Version | Supported           |
 | ------- | ------------------- |
+| 26.2.x  | :white_check_mark:  |
 | 26.1.x  | :white_check_mark:  |
 <!--| < 26.2  | :x:                 |-->
 
