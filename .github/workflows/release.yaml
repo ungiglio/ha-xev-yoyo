@@ -1,0 +1,38 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  release:
+    name: Create HACS Release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update version in manifest.json
+        run: |
+          # Rimuove l'eventuale prefisso 'v' dal tag (es. v1.0.0 -> 1.0.0)
+          CLEAN_VERSION="${GITHUB_REF_NAME#v}"
+          
+          MANIFEST_PATH="${{ github.workspace }}/custom_components/xev_yoyo/manifest.json"
+          
+          # Aggiorna la chiave "version" mantenendo la formattazione JSON valida
+          jq --arg ver "$CLEAN_VERSION" '.version = $ver' "$MANIFEST_PATH" > "$MANIFEST_PATH.tmp" && mv "$MANIFEST_PATH.tmp" "$MANIFEST_PATH"
+
+      - name: Create ZIP for HACS
+        run: |
+          cd "${{ github.workspace }}/custom_components/xev_yoyo"
+          zip custom_components.zip -r ./
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ github.workspace }}/custom_components/xev_yoyo/custom_components.zip
+          generate_release_notes: true
