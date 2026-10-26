@@ -1,0 +1,56 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "mobile": "Numer telefonu",
+                    "password": "Hasło",
+                    "region_code": "Kod kraju"
+                }
+            }
+        },
+        "error": {
+            "invalid_auth": "Nieprawidłowe dane logowania",
+            "no_vehicles": "Nie znaleziono pojazdów",
+            "cannot_connect": "Błąd połączenia"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "battery": {
+                "name": "Bateria"
+            },
+            "range": {
+                "name": "Zasięg"
+            },
+            "odometer": {
+                "name": "Licznik kilometrów"
+            },
+            "debug": {
+                "name": "Debugowanie API"
+            },
+            "status": {
+                "name": "Status",
+                "state": {
+                    "charging": "Ładowanie",
+                    "disconnected": "Rozłączono",
+                    "standby": "W trybie gotowości",
+                    "unknown": "Nieznany"
+                }
+            }
+        },
+        "binary_sensor": {
+            "lock": {
+                "name": "Blokada drzwi"
+            },
+            "windows": {
+                "name": "Okna"
+            }
+        },
+        "device_tracker": {
+            "location": {
+                "name": "Lokalizacja"
+            }
+        }
+    }
+}

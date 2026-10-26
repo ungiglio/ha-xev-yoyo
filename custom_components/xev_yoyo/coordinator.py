@@ -1,6 +1,6 @@
 import logging
 from datetime import timedelta
-import async_timeout
+import asyncio
 
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, UpdateFailed
@@ -31,7 +31,7 @@ class XevYoyoCoordinator(DataUpdateCoordinator):
         )
 
         try:
-            async with async_timeout.timeout(15):
+            async with asyncio.timeout(15):
                 token = self.entry_data["token"]
                 vehicle_id = self.entry_data["vehicle_id"]
                 

@@ -1,0 +1,56 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "mobile": "Номер телефону",
+                    "password": "Пароль",
+                    "region_code": "Код країни"
+                }
+            }
+        },
+        "error": {
+            "invalid_auth": "Недійсні облікові дані",
+            "no_vehicles": "Транспортних засобів не знайдено",
+            "cannot_connect": "Помилка з'єднання"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "battery": {
+                "name": "Акумулятор"
+            },
+            "range": {
+                "name": "Запас ходу"
+            },
+            "odometer": {
+                "name": "Одометр"
+            },
+            "debug": {
+                "name": "Налагодження API"
+            },
+            "status": {
+                "name": "Стан",
+                "state": {
+                    "charging": "Заряджається",
+                    "disconnected": "Відключено",
+                    "standby": "Очікування",
+                    "unknown": "Невідомо"
+                }
+            }
+        },
+        "binary_sensor": {
+            "lock": {
+                "name": "Замок"
+            },
+            "windows": {
+                "name": "Вікна"
+            }
+        },
+        "device_tracker": {
+            "location": {
+                "name": "Місцезнаходження"
+            }
+        }
+    }
+}

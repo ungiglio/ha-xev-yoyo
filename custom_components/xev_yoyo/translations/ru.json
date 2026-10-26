@@ -1,0 +1,56 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "mobile": "Номер телефона",
+                    "password": "Пароль",
+                    "region_code": "Код страны"
+                }
+            }
+        },
+        "error": {
+            "invalid_auth": "Неверные учетные данные",
+            "no_vehicles": "Транспортные средства не найдены",
+            "cannot_connect": "Ошибка подключения"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "battery": {
+                "name": "Аккумулятор"
+            },
+            "range": {
+                "name": "Запас хода"
+            },
+            "odometer": {
+                "name": "Одометр"
+            },
+            "debug": {
+                "name": "Отладка API"
+            },
+            "status": {
+                "name": "Статус",
+                "state": {
+                    "charging": "Заряжается",
+                    "disconnected": "Отключено",
+                    "standby": "В ожидании",
+                    "unknown": "Неизвестно"
+                }
+            }
+        },
+        "binary_sensor": {
+            "lock": {
+                "name": "Центральный замок"
+            },
+            "windows": {
+                "name": "Окна"
+            }
+        },
+        "device_tracker": {
+            "location": {
+                "name": "Местоположение"
+            }
+        }
+    }
+}
