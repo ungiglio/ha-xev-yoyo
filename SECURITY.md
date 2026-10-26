@@ -6,9 +6,8 @@ We currently provide security updates for the following versions of this integra
 
 | Version | Supported           |
 | ------- | ------------------- |
-| 26.2.x  | :white_check_mark:  |
-| 26.1.x  | :white_check_mark:  |
-<!--| < 26.2  | :x:                 |-->
+| 1.0.x  | :white_check_mark:  |
+<!--| < 1.1.x  | :x:                 |-->
 
 We strongly recommend always using the latest version available via HACS to ensure maximum protection and compatibility with XEV APIs.
 
