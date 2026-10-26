@@ -7,5 +7,5 @@
   "iot_class": "cloud_polling",
   "issue_tracker": "https://github.com/ungiglio/ha-xev-yoyo/issues",
   "requirements": ["async_timeout"],
-  "version": "26.2"
+  "version": "1.0.0"
 }
