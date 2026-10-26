@@ -1,4 +1,4 @@
-[![v26.2](https://img.shields.io/badge/release-v26.2-blue)](https://github.com/ungiglio/ha-xev-yoyo/releases/tag/v26.2) [![License MIT](https://img.shields.io/badge/license-MIT-lightgrey)](https://github.com/ungiglio/ha-xev-yoyo?tab=MIT-1-ov-file)
+[![v1.0.0](https://img.shields.io/badge/release-v1.0.0-blue)](https://github.com/ungiglio/ha-xev-yoyo/releases/tag/v1.0.0) [![License MIT](https://img.shields.io/badge/license-MIT-lightgrey)](https://github.com/ungiglio/ha-xev-yoyo?tab=MIT-1-ov-file)
 
 # XEV Yoyo - Home Assistant Integration
 
@@ -21,12 +21,11 @@ Unofficial Home Assistant integration for the **XEV Yoyo** electric vehicle. Thi
 
 ## Installation via HACS
 
-1. Ensure HACS is installed and working correctly.
-2. Navigate to HACS > Integrations.
-4. Search for "XEV Yoyo" and select it from the list.
-5. Click Download and, once finished, restart Home Assistant.
-6. Go to Settings > Devices & Services > Add Integration.
-7. Search for "XEV Yoyo" and follow the setup instructions.
+1. Navigate to Settings > Marketplace (for Home Assistant 2026.11 and newer) or HACS (Must be installed) > Integrations (for older versions).
+2. Search for "XEV Yoyo" and select it from the list.
+3. Click Download and, once finished, restart Home Assistant.
+4. Go to Settings > Devices & Services > Add Integration.
+5. Search for "XEV Yoyo" and follow the setup instructions.
 
 ---
 
@@ -51,12 +50,11 @@ Integrazione non ufficiale per il veicolo elettrico **XEV Yoyo**, sviluppata tra
 
 ## Installazione
 
-1. Assicurati che HACS sia installato e funzionante.
-2. Naviga in HACS > Integrazioni.
-4. Cerca "XEV Yoyo" e selezionalo dai risultati.
-5. Clicca su Scarica e, una volta terminato, riavvia Home Assistant.
-6. Vai in Impostazioni > Dispositivi e Servizi > Aggiungi integrazione.
-7. Cerca "XEV Yoyo" e segui la procedura di configurazione.
+1. Naviga in Impostazioni > Marketplace (Per Home Assistant 2026.11 e più recenti) oppure HACS (già installato) > Integrazioni (Per le versioni più vecchie).
+2. Cerca "XEV Yoyo" e selezionalo dai risultati.
+3. Clicca su Scarica e, una volta terminato, riavvia Home Assistant.
+4. Vai in Impostazioni > Dispositivi e Servizi > Aggiungi integrazione.
+5. Cerca "XEV Yoyo" e segui la procedura di configurazione.
 
 ---
 

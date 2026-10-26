@@ -6,7 +6,7 @@ We currently provide security updates for the following versions of this integra
 
 | Version | Supported           |
 | ------- | ------------------- |
-| 1.0.x  | :white_check_mark:  |
+| 1.0.x   | :white_check_mark:  |
 <!--| < 1.1.x  | :x:                 |-->
 
 We strongly recommend always using the latest version available via HACS to ensure maximum protection and compatibility with XEV APIs.
@@ -25,4 +25,4 @@ Please note the following regarding security:
 
 ## Acknowledgments
 
-We appreciate the work of security researchers who help us keep the XEV Yoyo user community safe.
+We appreciate the work of security researchers who help us keep the community safe. This integration is not affiliated with or endorsed by XEV.
