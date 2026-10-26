@@ -1,6 +1,5 @@
 import logging
 import asyncio
-import async_timeout
 import hashlib
 import json
 
@@ -32,7 +31,7 @@ class XevApi:
     async def _request(self, method, url, headers, json_data=None):
         data = json.dumps(json_data, separators=(',', ':')) if json_data else None
         try:
-            async with async_timeout.timeout(10):
+            async with asyncio.timeout(10):
                 async with self._session.request(method, url, headers=headers, data=data) as res:
                     return await res.json()
         except Exception as e:

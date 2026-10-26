@@ -1,4 +1,4 @@
-[![v1.0.0](https://img.shields.io/badge/release-v1.0.0-blue)](https://github.com/ungiglio/ha-xev-yoyo/releases/tag/v1.0.0) [![License MIT](https://img.shields.io/badge/license-MIT-lightgrey)](https://github.com/ungiglio/ha-xev-yoyo?tab=MIT-1-ov-file)
+[![v1.0.1](https://img.shields.io/badge/release-v1.0.1-blue)](https://github.com/ungiglio/ha-xev-yoyo/releases/tag/v1.0.1) [![License MIT](https://img.shields.io/badge/license-MIT-lightgrey)](https://github.com/ungiglio/ha-xev-yoyo?tab=MIT-1-ov-file)
 
 # XEV Yoyo - Home Assistant Integration
 
