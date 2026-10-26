@@ -1,0 +1,56 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "mobile": "携帯電話番号",
+                    "password": "パスワード",
+                    "region_code": "国コード"
+                }
+            }
+        },
+        "error": {
+            "invalid_auth": "認証情報が無効です",
+            "no_vehicles": "車両が見つかりません",
+            "cannot_connect": "接続エラー"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "battery": {
+                "name": "バッテリー"
+            },
+            "range": {
+                "name": "航続可能距離"
+            },
+            "odometer": {
+                "name": "オドメーター"
+            },
+            "debug": {
+                "name": "APIデバッグ"
+            },
+            "status": {
+                "name": "ステータス",
+                "state": {
+                    "charging": "充電中",
+                    "disconnected": "切断済み",
+                    "standby": "スタンバイ",
+                    "unknown": "不明"
+                }
+            }
+        },
+        "binary_sensor": {
+            "lock": {
+                "name": "ドアロック"
+            },
+            "windows": {
+                "name": "ウィンドウ"
+            }
+        },
+        "device_tracker": {
+            "location": {
+                "name": "位置情報"
+            }
+        }
+    }
+}

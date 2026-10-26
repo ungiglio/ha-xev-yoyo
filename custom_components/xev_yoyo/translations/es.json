@@ -1,0 +1,56 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "mobile": "Número de teléfono",
+                    "password": "Contraseña",
+                    "region_code": "Prefijo regional"
+                }
+            }
+        },
+        "error": {
+            "invalid_auth": "Credenciales no válidas",
+            "no_vehicles": "No se encontraron vehículos",
+            "cannot_connect": "Error de conexión"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "battery": {
+                "name": "Batería"
+            },
+            "range": {
+                "name": "Autonomía"
+            },
+            "odometer": {
+                "name": "Cuentakilómetros"
+            },
+            "debug": {
+                "name": "Depuración API"
+            },
+            "status": {
+                "name": "Estado",
+                "state": {
+                    "charging": "Cargando",
+                    "disconnected": "Desconectado",
+                    "standby": "En espera",
+                    "unknown": "Desconocido"
+                }
+            }
+        },
+        "binary_sensor": {
+            "lock": {
+                "name": "Cierre"
+            },
+            "windows": {
+                "name": "Ventanillas"
+            }
+        },
+        "device_tracker": {
+            "location": {
+                "name": "Ubicación"
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "mobile": "手机号码",
+                    "password": "密码",
+                    "region_code": "国家/地区区号"
+                }
+            }
+        },
+        "error": {
+            "invalid_auth": "身份验证失败，凭据无效",
+            "no_vehicles": "未找到相关车辆",
+            "cannot_connect": "连接错误"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "battery": {
+                "name": "电量"
+            },
+            "range": {
+                "name": "续航里程"
+            },
+            "odometer": {
+                "name": "总里程"
+            },
+            "debug": {
+                "name": "API 调试"
+            },
+            "status": {
+                "name": "状态",
+                "state": {
+                    "charging": "充电中",
+                    "disconnected": "已断开",
+                    "standby": "待机",
+                    "unknown": "未知"
+                }
+            }
+        },
+        "binary_sensor": {
+            "lock": {
+                "name": "车锁"
+            },
+            "windows": {
+                "name": "车窗"
+            }
+        },
+        "device_tracker": {
+            "location": {
+                "name": "位置"
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "data": {
+                    "mobile": "Handynummer",
+                    "password": "Passwort",
+                    "region_code": "Ländervorwahl"
+                }
+            }
+        },
+        "error": {
+            "invalid_auth": "Ungültige Anmeldedaten",
+            "no_vehicles": "Keine Fahrzeuge gefunden",
+            "cannot_connect": "Verbindungsfehler"
+        }
+    },
+    "entity": {
+        "sensor": {
+            "battery": {
+                "name": "Batterie"
+            },
+            "range": {
+                "name": "Reichweite"
+            },
+            "odometer": {
+                "name": "Kilometerzähler"
+            },
+            "debug": {
+                "name": "API-Debug"
+            },
+            "status": {
+                "name": "Status",
+                "state": {
+                    "charging": "Wird geladen",
+                    "disconnected": "Getrennt",
+                    "standby": "Standby",
+                    "unknown": "Unbekannt"
+                }
+            }
+        },
+        "binary_sensor": {
+            "lock": {
+                "name": "Verriegelung"
+            },
+            "windows": {
+                "name": "Fenster"
+            }
+        },
+        "device_tracker": {
+            "location": {
+                "name": "Standort"
+            }
+        }
+    }
+}
